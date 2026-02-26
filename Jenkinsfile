@@ -11,7 +11,6 @@ pipeline {
         stage('Build & Deploy') {
             steps {
                 // Navigate to project directory
-                sh 'cd $WORKSPACE'
 
                 // Ensure Docker Compose is installed
                 sh 'sudo docker ps'
