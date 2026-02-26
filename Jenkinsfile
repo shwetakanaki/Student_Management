@@ -17,9 +17,8 @@ pipeline {
 
                 // Build and start containers
                 sh '''
-                    sudo docker compose down
-                    sudo docker compose build
-                    sudo docker compose up -d
+                    sudo docker run -d nginx 
+                    sudo docker ps 
                 '''
             }
         }
