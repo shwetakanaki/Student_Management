@@ -18,7 +18,7 @@ pipeline {
                 // Build and start containers
                 sh '''
                     sudo docker build -t python:t1 .
-                    sudo  docker run -d -p 8000:8000 python:t1
+                    sudo  docker run -d -p 8001:8001 python:t1
 
                   //  sudo docker compose -f docker_compose.yml build
                     
