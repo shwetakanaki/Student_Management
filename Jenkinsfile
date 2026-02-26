@@ -19,6 +19,8 @@ pipeline {
                 sh '''
                     sudo docker run -d nginx 
                     sudo docker ps 
+                    sudo docker compose build
+                    
                 '''
             }
         }
