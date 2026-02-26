@@ -13,13 +13,14 @@ pipeline {
                 // Navigate to project directory
 
                 // Ensure Docker Compose is installed
-                sh 'sudo docker ps'
+             //   sh 'sudo docker ps -a'
 
                 // Build and start containers
                 sh '''
-                    sudo docker run -d nginx 
-                    sudo docker ps 
-                    sudo docker compose -f docker_compose.yml build
+                    sudo docker build -t python:t1 .
+                    sudo docker run -it python:t1
+                    sudo docker ps -a
+                  //  sudo docker compose -f docker_compose.yml build
                     
                 '''
             }
