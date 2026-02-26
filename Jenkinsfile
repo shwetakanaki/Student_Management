@@ -14,7 +14,7 @@ pipeline {
                 sh 'cd $WORKSPACE'
 
                 // Ensure Docker Compose is installed
-                sh 'docker compose version'
+                sh 'docker ps'
 
                 // Build and start containers
                 sh '''
