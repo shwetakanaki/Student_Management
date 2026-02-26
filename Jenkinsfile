@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/ursmaheshj/Student_Management.git', branch: 'master'
+                git url: 'https://github.com/ursmaheshj/Student_Management.git', branch: 'main'
             }
         }
 
