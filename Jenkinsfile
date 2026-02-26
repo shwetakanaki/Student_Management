@@ -18,7 +18,7 @@ pipeline {
                 // Build and start containers
                 sh '''
                     sudo docker build -t python:t1 .
-                    sudo  docker run -it -p 8000:8000 --name myapp python:t1
+                    sudo  docker run -d -p 8000:8000 --name myapp python:t1
                         sudo docker inspect <container_name_or_id>
 
                   //  sudo docker compose -f docker_compose.yml build
