@@ -20,7 +20,7 @@ pipeline {
                     sudo docker build -t python:t1 .
                     sudo  docker run -d -P python:t1
 
-                  # sudo docker compose -f docker_compose.yml build
+                 
                     
                 '''
             }
